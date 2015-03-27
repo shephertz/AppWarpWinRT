@@ -30,10 +30,13 @@ namespace AppWarp_WinRTTestSample
                 case WarpResponseResultCode.AUTH_ERROR:
                     if (eventObj.getReasonCode() == WarpReasonCode.WAITING_FOR_PAUSED_USER)
                     {
+                        Debug.WriteLine("Connection state : " + WarpClient.GetInstance().GetConnectionState());
                         subMessage = "Auth Error Waiting for Paused User";
-                        int sessionID = (int)DBManager.getDBData("SessionID");
-                        Debug.WriteLine("Auth Error for paused user " + sessionID);
-                        WarpClient.GetInstance().RecoverConnectionWithSessioId(sessionID, "rahul");
+
+                        //int sessionID = (int)DBManager.getDBData("SessionID");
+                        //Debug.WriteLine("Auth Error for paused user " + sessionID);
+                        //WarpClient.GetInstance().RecoverConnectionWithSessionId(sessionID, "rahul");
+                         
                     }
                     else
                     {
@@ -42,6 +45,7 @@ namespace AppWarp_WinRTTestSample
                     break;
                 case WarpResponseResultCode.SUCCESS:
                      subMessage = "success";
+                     WarpClient.GetInstance().Disconnect();
                     //DBManager.saveData("SessionID", WarpClient.GetInstance().GetSessionId());
                     // _page.showResult("connection success");
                     break;
@@ -57,7 +61,13 @@ namespace AppWarp_WinRTTestSample
 
                     break;
             }
-            UIDispatcher.Execute(delegate() { tblmessage.Text = tblmessage.Text + "\nConnect Done: " + subMessage; });
+            UIDispatcher.Execute(delegate() {
+                if (tblmessage.Text.Length > 200)
+                {
+                    tblmessage.Text = "";
+                }
+                tblmessage.Text = tblmessage.Text + "\nConnect Done: " + subMessage; 
+            });
         }
         /*
         public void RecoverConnection()
@@ -91,18 +101,31 @@ namespace AppWarp_WinRTTestSample
         }*/
         public void onDisconnectDone(ConnectEvent eventObj)
         {
-            UIDispatcher.Execute(delegate()
-            {
-                if (eventObj.getResult() == WarpResponseResultCode.SUCCESS)
+                Debug.WriteLine("Disconnect Done: " + eventObj.getResult());
+                UIDispatcher.Execute(delegate()
                 {
-                    tblmessage.Text = tblmessage.Text + "\ndisconnect done success";
-                }
-                else
-                {
-                    tblmessage.Text = tblmessage.Text + "\ndisconnect done failed";
-                }
-
-            });
+                    try
+                    {
+                    if (eventObj.getResult() == WarpResponseResultCode.SUCCESS)
+                    {
+                        if (tblmessage.Text.Length > 200)
+                        {
+                            tblmessage.Text = "";
+                        }
+                        tblmessage.Text = tblmessage.Text + "\ndisconnect done success";
+                        //Task.Delay(1000);
+                        WarpClient.GetInstance().Connect("kanak");
+                    }
+                    else
+                    {
+                        tblmessage.Text = tblmessage.Text + "\ndisconnect done failed";
+                    }
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex.StackTrace);
+                    }
+                });
 
         }
 

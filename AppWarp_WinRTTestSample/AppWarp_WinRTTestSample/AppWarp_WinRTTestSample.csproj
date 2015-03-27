@@ -25,6 +25,8 @@
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -147,7 +149,7 @@
   <ItemGroup>
     <Reference Include="APPWARP_WINRT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\APPWARP_WINRT.dll</HintPath>
+      <HintPath>..\..\..\Changes WinRT by Rahul\AppWarp_WP7_SDK-master\AppWarp_WP7_SDK-master\APPWARP_CSHARP_SDK\APPWARP_CSHARP_SDK\bin\WinRT\Debug\APPWARP_WINRT.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

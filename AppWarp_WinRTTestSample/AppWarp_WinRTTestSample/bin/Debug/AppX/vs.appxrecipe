@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RAHULWIN8</Machine>
+    <WindowsUser>USER2</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0f8c5674-a7ed-487e-a5b0-e511958605a6</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>52C60040C79A5CFFC4B22B17A7085167415C8B139C3AD42532E7660074736EDB</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>0f8c5674-a7ed-487e-a5b0-e511958605a6_1.0.0.0_neutral__8qs6vjbj2qnng</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>0f8c5674-a7ed-487e-a5b0-e511958605a6_8qs6vjbj2qnng!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>0f8c5674-a7ed-487e-a5b0-e511958605a6</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=USER2</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-21T11:26:12.131</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\AppWarp_WinRTTestSample.exe">
+      <PackagePath>AppWarp_WinRTTestSample.exe</PackagePath>
+      <Modified>2015-01-21T11:26:11.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarp_WP7_SDK\APPWARP_CSHARP_SDK\APPWARP_CSHARP_SDK\bin\WinRT\Debug\APPWARP_WINRT.dll">
+      <PackagePath>APPWARP_WINRT.dll</PackagePath>
+      <Modified>2015-01-21T11:26:09.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-29T07:06:51.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-29T07:06:51.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-29T07:06:51.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-29T07:06:51.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Library\APPWARP_WINRT.dll">
+      <PackagePath>Library\APPWARP_WINRT.dll</PackagePath>
+      <Modified>2014-12-29T07:06:51.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-01-21T11:26:11.536</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-01-21T11:26:11.536</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\AppWarp_WinRTTestSample.xr.xml">
+      <PackagePath>AppWarp_WinRTTestSample.xr.xml</PackagePath>
+      <Modified>2015-01-15T06:11:27.037</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-01-21T11:26:12.052</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

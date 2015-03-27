@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using com.shephertz.app42.gaming.multiplayer.client.util;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -42,6 +43,7 @@ namespace AppWarp_WinRTTestSample
              WarpClient.GetInstance().AddUpdateRequestListener(new UpdateListener(tblResponse));
              WarpClient.GetInstance().AddLobbyRequestListener(new LobbyListener(tblResponse));
              WarpClient.GetInstance().AddTurnBasedRoomRequestListener(new TurnRoomListener(tblResponse));
+             WarpClient.setRecoveryAllowance(60);
              //MasterClient.GetInstance().AddMasterRequestListener(new MasterListener(tblMessage));
         }
 
@@ -196,6 +198,23 @@ namespace AppWarp_WinRTTestSample
         {
             tblNotification.Text = "Notifications :";
             tblResponse.Text = "Response :";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //WarpClient.setRecoveryAllowance(60);
+            Byte state = WarpClient.GetInstance().GetConnectionState();
+            UIDispatcher.Execute(delegate() { tblResponse.Text = tblResponse.Text + "\nConnect Done: " + state.ToString(); });
+            WarpClient.GetInstance().RecoverConnection();
+            state = WarpClient.GetInstance().GetConnectionState();
+            UIDispatcher.Execute(delegate() { tblResponse.Text = tblResponse.Text + "\nConnect Done: " + state.ToString(); });
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Byte state = WarpClient.GetInstance().GetConnectionState();
+            UIDispatcher.Execute(delegate() { tblResponse.Text = tblResponse.Text + "\nConnect Done: " + state.ToString(); });
+            //WarpClient.GetInstance().GetConnectionState();
         }
     }
     /*

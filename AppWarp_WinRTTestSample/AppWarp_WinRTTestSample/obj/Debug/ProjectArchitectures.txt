@@ -1,0 +1,2 @@
+C:\Users\USER2\Desktop\AppWarp_WP7_SDK\APPWARP_CSHARP_SDK\APPWARP_CSHARP_SDK\APPWARP_WIN8.1_SDK.csproj;neutral
+C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample.csproj;neutral

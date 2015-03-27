@@ -33,12 +33,19 @@ namespace AppWarp_WinRTTestSample
             if (eventObj.getResult() == WarpResponseResultCode.SUCCESS)
             {
                 string[] roomids = eventObj.getRoomIds();
-                string roomidlist = "";
-                for (int i = 0; i < roomids.Length; i++)
+                if (roomids != null)
                 {
-                    roomidlist = roomidlist + "\n" + roomids[i];
+                    string roomidlist = "";
+                    for (int i = 0; i < roomids.Length; i++)
+                    {
+                        roomidlist = roomidlist + "\n" + roomids[i];
+                    }
+                    WriteOnUI("Get All Rooms Done room ids:\n" + roomidlist);
                 }
-                WriteOnUI("Get All Rooms Done room ids:\n" + roomidlist);
+                else 
+                {
+                    WriteOnUI("No rooms available.");
+                }
             }
             else
             {
@@ -116,6 +123,10 @@ namespace AppWarp_WinRTTestSample
         {
             UIDispatcher.Execute(delegate()
             {
+                if (tblmessage.Text.Length > 200)
+                {
+                    tblmessage.Text = "";
+                }
                 tblmessage.Text = tblmessage.Text + "\n" + message;
             });
         }

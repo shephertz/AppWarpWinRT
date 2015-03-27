@@ -1,0 +1,2 @@
+Asynchronous loading of data at Receive method in ClientChannel corrected.
+Corrected the Connect-Disconnect Bug.

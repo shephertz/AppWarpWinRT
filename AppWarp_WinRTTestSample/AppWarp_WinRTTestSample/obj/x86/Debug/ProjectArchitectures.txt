@@ -1,0 +1,1 @@
+C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample.csproj;x86

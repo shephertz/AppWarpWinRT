@@ -52,8 +52,10 @@
             <Button x:Name="btnGetMoveHistory" Content="get move history" VerticalAlignment="Center" Tag="2"  HorizontalAlignment="Center"  Width="180" Canvas.Left="984" Canvas.Top="88" Click="btnGetMoveHistory_Click"/>
             <Button x:Name="btnGetAllRooms" Content="get all rooms" VerticalAlignment="Center" Tag="2"  HorizontalAlignment="Center"  Width="180" Canvas.Left="1177" Canvas.Top="88" Click="btnGetAllRooms_Click"/>
             <Button x:Name="btnClear" Content="clear" VerticalAlignment="Center" Tag="4"  HorizontalAlignment="Center"   Width="180" Canvas.Left="879" Canvas.Top="23" Click="btnClear_Click"/>
+            <Button Content="Recover Connection" HorizontalAlignment="Left" Margin="809,208,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="Get Connection State" HorizontalAlignment="Left" Margin="1098,23,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
         </Canvas>
-        <TextBlock Grid.Row="1" x:Name="tblNotification" Text="Notification:" FontSize="22" Foreground="White" HorizontalAlignment="Center" Margin="16,406,734,39" TextWrapping="Wrap" Width="616"></TextBlock>
-        <TextBlock Grid.Row="1" x:Name="tblResponse" Text="Response:" FontSize="22" Foreground="White" HorizontalAlignment="Center" Margin="700,406,50,39" TextWrapping="Wrap" Width="616"/>
+        <TextBlock Grid.Row="1" x:Name="tblNotification" Text="Notification:" FontSize="22" Foreground="White" HorizontalAlignment="Center" Margin="16,406,734,39" TextWrapping="Wrap" Width="616" Padding="50,0,0,0"/>
+        <TextBlock Grid.Row="1" x:Name="tblResponse" Text="Response:" FontSize="22" Foreground="White" HorizontalAlignment="Center" Margin="700,406,50,39" TextWrapping="Wrap" Width="616" Padding="50,0,0,0"/>
     </Grid>
 </Page>

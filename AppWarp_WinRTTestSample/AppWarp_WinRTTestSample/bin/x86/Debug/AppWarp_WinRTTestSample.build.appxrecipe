@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KANIKAWIN8</Machine>
+    <WindowsUser>USER2</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>0f8c5674-a7ed-487e-a5b0-e511958605a6</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\obj\x86\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\AppWarp_WinRTTestSample.exe">
+      <PackagePath>AppWarp_WinRTTestSample.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Library\APPWARP_WINRT.dll">
+      <PackagePath>APPWARP_WINRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\Library\APPWARP_WINRT.dll">
+      <PackagePath>Library\APPWARP_WINRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\AppWarp_WinRTTestSample.xr.xml">
+      <PackagePath>AppWarp_WinRTTestSample.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\USER2\Desktop\AppWarpWinRT\AppWarp_WinRTTestSample\AppWarp_WinRTTestSample\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
